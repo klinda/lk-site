@@ -1,0 +1,10 @@
+<div class="work">
+	<a href="#" {{action "showModal"}}>{{fa-icon "fa-sticky-note"}} Resume</a> |
+	<a href="http://www.github.com/klinda" target="_blank">{{fa-icon "github-square"}} Github</a>
+</div>
+
+{{#if showModal}}
+	{{#modal-dialog close='closeModal' translucentOverlay=true targetAttachment='center'}}
+		<embed src="/docs/LindaKha-resume-site.pdf" type="application/pdf" width="700px" height="550px">
+	{{/modal-dialog}}
+{{/if}}

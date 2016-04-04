@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Linda Kha</h2>
+<h4> Front-end Developer</h4>
+hello.lindakha@gmail.com&nbsp; . &nbsp; 626.272.2366 
+
+<div class="nav">
+	{{#link-to "application"}} {{fa-icon "home"}} home. {{/link-to}}
+	{{#link-to "projects"}} {{fa-icon "file-text-o"}} projects. {{/link-to}}
+	{{#link-to "work"}} {{fa-icon "briefcase"}} work. {{/link-to}}
+	<a href="mailto:hello.lindakha@gmail.com?Subject=Hello%20Linda!" target="_top">
+		{{fa-icon "envelope-o"}} say hello.
+	</a>
+</div>
 
 {{outlet}}
