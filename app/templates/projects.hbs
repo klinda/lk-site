@@ -3,12 +3,10 @@
 		<img src="/images/rarwe.png">
 		<button {{action "showModal" 'rarwe'}}>Rock & Roll with Ember</button>
 	</div>
-
 	<div class="project2">
 		<img src="/images/array.png">
 		<button {{action "showModal" 'array'}}>Array</button>
 	</div>
-
 	<div class="project3">
 		<img src="/images/library-app.png">
 		<button {{action "showModal" 'library'}}>Library App</button>
@@ -34,27 +32,25 @@
 
 	<div class="desc">
 		{{#if rarwe}}
-			<p>
-				Following along Balint Erdi's "Rock and Roll with Ember.js" book, I built a rock and roll themed app that allows you to view, edit and delete bands as well as sort and search songs based on user queries.
-			</p>
+			<p><b>Ember.JS, Liquid-Fire, Bootstrap</b></p>
+			Following along Balint Erdi's "Rock and Roll with Ember.js" book, I built a rock and roll themed app that allows you to view, edit and delete bands. User can also sort and search songs based on user queries.
+			<br/>
 				<a href="https://github.com/klinda/ember-rarwe" target="_blank"> Github</a> |
 				<a href="http://rockandrollwithember.lkhaa.com.lindas-rarwe.pagefrontapp.com/" target="_blank">Demo</a>
 		{{else if library}}
-				<p>
-					Library App using Firebase API and Ember-faker to seed library data.
-				</p>
+				<b>Ember.JS</b>
+				<p>Library App using Firebase API and Ember-faker to seed library data.</p>
 				<a href="https://github.com/klinda/library-app" target="_blank"> Github</a> |
 				<a href="https://lindas-library.firebaseapp.com/" target="_blank">Demo</a>
 		{{else if array}}
-				Array is a client-side application that has been recently converted from JS to Ember. I took part in the Ember revamp, while working with form validation for the interactive components including saving slide, taking notes, saving stylus notes, email validation and editing profile.
+				<b>Ember.JS, Sass, JavaScript, PHP</b>
+				<p>Array has been recently converted from JS to Ember. I took part in the Ember revamp, while working with many user interaction components including form validation, saving slide, saving notes, email validation and updating profile.</p>
 		{{else}}
-				<p>
-					This is the first portfolio site that I built after completing SeedPaths. The site contains projects demonstrating: C#, Angular, HTML, CSS and graphic design.
+				<b>Javscript, HTML, CSS</b>
+				<p>The first portfolio site I built after completing SeedPaths. The site contains projects demonstrating: C#, Angular, HTML, CSS and graphic design.
 				</p>
 				<a href="http://students.seedpaths.com/linda-kha" target="_blank"> Site</a>
-
 		{{/if}}
 	</div>
-
 	{{/modal-dialog}}
 {{/if}}
